@@ -66,5 +66,21 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "lint": "pint",
+        "refactor": "rector",
+        "test:lint": "pint --test",
+        "test:refactor": "rector --dry-run",
+        "test:types": "phpstan analyse",
+        "test:type-coverage": "pest --type-coverage --min=100",
+        "test:unit": "pest --parallel",
+        "test": [
+            "@test:lint",
+            "@test:refactor",
+            "@test:types",
+            "@test:type-coverage",
+            "@test:unit"
+        ]
+    }
 }
