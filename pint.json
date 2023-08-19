@@ -1,5 +1,7 @@
 {
     "rules": {
-        "declare_strict_types": true
+        "declare_strict_types": true,
+        "final_class": true,
+        "fully_qualified_strict_types": true
     }
 }
