@@ -20,6 +20,7 @@
         "nunomaduro/larastan": "^2.6.4",
         "pestphp/pest": "^2.15.0",
         "pestphp/pest-plugin-laravel": "^2.2.0",
+        "pestphp/pest-plugin-type-coverage": "^2.0",
         "rector/rector": "^0.18.0",
         "spatie/laravel-ignition": "^2.2.0"
     },
