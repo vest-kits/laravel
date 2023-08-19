@@ -14,6 +14,7 @@ return static function (RectorConfig $rectorConfig): void {
         __DIR__.'/config',
         __DIR__.'/database',
         __DIR__.'/public',
+        __DIR__.'/routes',
     ]);
 
     $rectorConfig->rules([
