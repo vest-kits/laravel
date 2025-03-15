@@ -14,16 +14,16 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.24.1",
-        "larastan/larastan": "^3.0.2",
+        "larastan/larastan": "^3.2.0",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.21.2",
         "mockery/mockery": "^1.6.12",
         "nunomaduro/collision": "^8.7",
-        "pestphp/pest": "^3.7.2",
-        "peckphp/peck": "^0.1.1",
-        "pestphp/pest-plugin-laravel": "^3.0",
-        "pestphp/pest-plugin-type-coverage": "^3.2.3",
-        "rector/rector": "^2.0.7"
+        "pestphp/pest": "^3.7.4",
+        "peckphp/peck": "^0.1.2",
+        "pestphp/pest-plugin-laravel": "^3.1",
+        "pestphp/pest-plugin-type-coverage": "^3.4.0",
+        "rector/rector": "^2.0.10"
     },
     "autoload": {
         "psr-4": {
