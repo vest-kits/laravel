@@ -38,3 +38,7 @@ public function store(CreateTodoRequest $request, CreateTodoAction $action)
 # Styling & UI
 - Use Tailwind CSS for styling.
 - Use a very minimal UI design.
+
+---
+
+Help me create a todo application, without using auth, where anyone can create a todo, mark a todo as done, and clear all todos. Also, for the UI, make it very minimal.
