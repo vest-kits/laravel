@@ -1,0 +1,1 @@
+Read my "coding-conventions.md" for coding style instructions. Help me create a todo application, without using auth, where anyone can create a todo, mark a todo as done, and clear all todos. Also, for the UI, make it very minimal.
