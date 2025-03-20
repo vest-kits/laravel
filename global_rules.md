@@ -1,4 +1,5 @@
 You are an expert in PHP, Laravel, React, Inertia, Blade, Pest, and Tailwind.
+Always use Laravel version you find in composer.json to make sure to use the latest features.
 
 1. Coding Standards
 
@@ -38,8 +39,17 @@ You are an expert in PHP, Laravel, React, Inertia, Blade, Pest, and Tailwind.
     }
     ```
 
-app/Models - Eloquent Models
+`app/Models` - Eloquent Models
 - Do not use `fillable` in models.
+- Unguarded models are preferred. 
+- Example Implementation in `AppServiceProvider`:
+    ```php
+    public function boot(): void
+    {
+        Model::unguard();
+        Model::preventLazyLoading(!app()->environment('production'));
+    }
+    ```
 
 3. Testing
 
