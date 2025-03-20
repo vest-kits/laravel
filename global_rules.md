@@ -1,56 +1,69 @@
-You are an expert in PHP, Laravel, React, Inertia, Pest, and Tailwind.
+You are an expert in PHP, Laravel, React, Inertia, Blade, Pest, and Tailwind.
 
-# Coding Standards:
-- Use the latest PHP 8.4 features.
-- Use `pint.json` for coding standards.
-- Be strict with types, including array shapes using PHPStan.
+1. Coding Standards
 
-# Project Structure & Architecture
+- Utilize the latest PHP v8.4 features.
+- Adhere to coding standards defined in `pint.json`.
+- Enforce strict type safety, including `array` shapes using PHPStan.
 
-- When creating a new file, remove the existing `.gitkeep` file.
-- Stick the existing project structure, never create additional folders.
-- Don't use the `DB::` facade directly, use `Model::query()` instead.
-- Never add / update / delete a dependency without asking me first.
+2. Project Structure & Architecture
 
-- `app/Http/Controllers` - Controllers.
-    - Don't use the abstract `Controller.php`, or any other base controller.
+- Remove the existing `.gitkeep` file when creating a new file.
+- Follow the existing project structure; do not create additional folders.
+- Do not use the `DB::` facade directly—always use `Model::query()`.
+- Do not add, update, or delete dependencies without prior approval.
 
-- `app/Http/Requests` - Form requests.
-    - Always use FormRequest for validation, and use `Create`, `Update` and `Delete` verbs.
+2.1 Directory Conventions
 
-- `app/Actions` - Business logic.
-    - Always use the actions pattern, and use `Create`, `Update` and `Delete` verbs.
+`app/Http/Controllers` - Controllers
+- Do not use abstract `Controller.php` or any base controller.
 
-- `app/Models` - Eloquent models.
-    - Don't use `fillable` in models.
+`app/Http/Requests` - Form Requests
+- Always use FormRequest for validation.
+- Use `Create`, `Update`, and `Delete` verbs in naming.
 
-E.g:
-```
-public function store(CreateTodoRequest $request, CreateTodoAction $action)
-{
-    /** @var User $user */
-    $user = $request->user();
+`app/Actions` - Business Logic
+- Follow the Actions pattern.
+- Use `Create`, `Update`, and `Delete` verbs in naming.
+- Example Implementation:
+    ```php
+    public function store(CreateTodoRequest $request, CreateTodoAction $action)
+    {
+        /** @var User $user */
+        $user = $request->user();
 
-    $action->handle($user, $request->validated());
-    
-    // ...
-}
-```
+        $action->handle($user, $request->validated());
+        
+        // ...
+    }
+    ```
 
-# Testing
-- Always write tests using PEST PHP.
+app/Models - Eloquent Models
+- Do not use `fillable` in models.
+
+3. Testing
+
+- All tests must be written using PEST PHP.
 - Run `composer lint` after creating or modifying a file.
-- Run `composer test` at the very end to ensure all tests pass.
-- Always ask me for clarification if you think you should remove a test.
-- Always make sure the new code is covered by tests.
-- When creating models, always create a factory.
-- Put models testing in the `tests/Unit/Models` directory.
-- Put actions testing in the `tests/Unit/Actions` directory.
-- Put controllers testing in the `tests/Feature` directory.
+- Run `composer test` before finalizing any changes to ensure tests pass.
+- Always confirm with approval before removing a test.
+- Ensure all new code is covered by tests.
+- When creating models, always generate a `{Model}Factory`.
 
-# Styling & UI
-- Use Tailwind CSS for styling.
-- Use a very minimal UI design.
+3.1 Test Directory Structure
 
-# Ending tasks
-- But sure to re-compile assets after finishing a task that involves frontend changes.
+- Commands: tests/Feature/Console
+- Controllers: tests/Feature/Http
+- Actions: tests/Unit/Actions
+- Models: tests/Unit/Models
+- Jobs: tests/Unit/Jobs
+
+4. Styling & UI
+
+- Tailwind CSS must be used for styling.
+- Maintain a minimal UI design.
+
+5. Task Completion Requirements
+
+- Recompile assets after making frontend-related changes.
+- Ensure compliance with all above guidelines before marking a task as complete.
