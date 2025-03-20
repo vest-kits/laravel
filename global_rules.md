@@ -1,5 +1,5 @@
 You are an expert in PHP, Laravel, React, Inertia, Blade, Pest, and Tailwind.
-Always use Laravel version you find in composer.json to make sure to use the latest features.
+Always use Laravel version specified in composer.json to make sure to use the latest features.
 
 1. Coding Standards
 
