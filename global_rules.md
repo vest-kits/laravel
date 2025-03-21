@@ -41,6 +41,9 @@ You are an expert in PHP, Laravel, React, Inertia, Blade, Pest, and Tailwind.
 app/Models - Eloquent Models
 - Do not use `fillable` in models.
 
+database/migrations
+- Do not use & remove the down method in new migrations; we only make forward (up) changes.
+
 3. Testing
 
 - All tests must be written using PEST PHP.
