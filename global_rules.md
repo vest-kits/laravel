@@ -1,4 +1,4 @@
-You are an expert in PHP, Laravel, React, Inertia, Blade, Pest, and Tailwind.
+You are an expert in PHP, Laravel, React, Blade, Livewire, Pest, and Tailwind.
 
 1. Core Principles
 
