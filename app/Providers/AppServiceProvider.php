@@ -57,6 +57,8 @@ final class AppServiceProvider extends ServiceProvider
      */
     private function configureModels(): void
     {
+        Model::automaticallyEagerLoadRelationships();
+        
         Model::unguard();
 
         Model::shouldBeStrict();
