@@ -2303,12 +2303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/essentials.git",
-                "reference": "b971233f3a4b1624c8d401ae41dfe357c32b6478"
+                "reference": "6bbaffe4efc9867b7c12ce074ceca1f0bdc66947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/essentials/zipball/b971233f3a4b1624c8d401ae41dfe357c32b6478",
-                "reference": "b971233f3a4b1624c8d401ae41dfe357c32b6478",
+                "url": "https://api.github.com/repos/nunomaduro/essentials/zipball/6bbaffe4efc9867b7c12ce074ceca1f0bdc66947",
+                "reference": "6bbaffe4efc9867b7c12ce074ceca1f0bdc66947",
                 "shasum": ""
             },
             "require": {
@@ -2374,7 +2374,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2025-04-17T09:43:55+00:00"
+            "time": "2025-04-17T17:11:04+00:00"
         },
         {
             "name": "nunomaduro/termwind",
